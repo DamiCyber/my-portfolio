@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+.container{
+    background-image:linear-gradient(to right, rgb(0, 0, 0),rgba(22, 21, 21, 0)), url(./IMAGES/andrew-kliatskyi-mRY6jbGTjYg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+.logo{
+    color: white;
+}
+.logo a {
+    text-decoration: none;
+}
+span{
+    color: #f9004d;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background-color:rgba(255, 255, 255, 0.243);
+    transition:.5s;
+}
+.checkbtn{
+    font-size:30px ;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    padding-left: 8px;
+    border-bottom: 1px solid #f9004d;
+}
+.sub-nav{
+    display: none;
+}
+
+ul li:hover .sub-nav{
+    display: block;
+    position: absolute;
+    margin-top: -25px;
+    color: white;
+    background-color: #000;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585
+}
+ul li .sub-nav{
+ flex-direction: column;
+}
+.btn{
+    padding:10px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #f9004d;
+    border-radius: 30px;
+    transition: .4s;
+}
+.btn a{
+    text-decoration: none;
+    color:white;
+}
+
+.btn:hover{
+transform: scale(1.2);
+}
+.con{
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    align-items: center;
+    line-height: 45px;
+}
+.small{
+    font-size:20px;
+    color: #fcfc ;
+}
+h5{
+    letter-spacing: 2px;
+    font-size:12px;
+    text-transform: uppercase;
+}
+h1{
+    letter-spacing: 4px;
+    font-size: 39px;
+    text-transform: uppercase;
+    color:white;
+}
+h6{
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-size: 18px;
+    color:white;
+}
+.newsletter input{
+    border-radius: 30px;
+    outline: none;
+    height:40px;
+    width:100%;
+    border:2px solid #f9004d ;
+}
+.newsletter input::placeholder{
+    padding-left: 30px;
+}
+.btn2{
+    padding:7px 24px;
+    width: 26%;
+    background-color:transparent;
+    font-size: 11px;
+    color:white;
+    outline: none;
+    border:2px solid #f9004d;
+    cursor: pointer;
+    background-color: #f9004d;
+    border-radius: 30px;
+    transition: .4s;
+}
+.btn2{
+    position:absolute;
+    top:80%;
+    right: 6px;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+} 
+.about{
+    width: 100%;
+    background-color: #191919;
+}
+.about h2{
+    font-size: 28px;
+}
+button{
+    padding:7px 25px;
+    width: 25%;
+    background-color:transparent;
+    font-size: 11px;
+    color:white;
+    outline: none;
+    border:2px solid #f9004d;
+    cursor: pointer;
+    background-color: #f9004d;
+    border-radius: 30px;
+    transition: .4s;
+}
+.btn3 a{
+    text-decoration: none;
+    font-size: 11px;
+    color:white;
+    
+}
+.btn3{
+    transition:.5s;
+}
+.btn3:hover{
+    transform: scale(1.2);
+}
+.content{
+    line-height: 29px;
+    color:white;
+    padding-top:8%;
+    padding-bottom:8%;
+    padding-left:20%;
+    width: 80%;
+    text-align: center;
+}
+.content p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fcfc;
+}
+.services{
+    width: 100%;
+    height: 290px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    text-align: center;
+    background-color: #101010;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.services h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 25px;
+}
+.services p{
+    color: #fcfc;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 10px;
+    width: 90%;
+    font-size: 10px;
+}
+.box1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    border-radius:10px ;
+    background-color: #191919;
+    padding-top: 30px;
+    width: 300px;
+    height: 180px;
+    box-shadow: 0px 0px 5px #000, 0px 0px 10px #858585;
+}
+.box2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    border-radius:10px ;
+    background-color: #191919;
+    padding-top: 30px;
+    width: 300px;
+    height: 180px;
+    box-shadow: 0px 0px 5px #000, 0px 0px 10px #858585;
+}
+.box3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    border-radius:10px ;
+    background-color: #191919;
+    box-shadow: 0px 0px 5px #000, 0px 0px 10px #858585;
+    padding-top: 30px;
+    width: 300px;
+    height: 180px;
+}
+
+.box1{
+    animation-name: box1;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    transition: 1s;
+}
+@keyframes box1{
+    0%{
+      transform: translateX(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.box2{
+    animation-name: box2;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    transition: 2s;
+}
+@keyframes box2{
+    0%{
+      transform: translateX(15%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.box3{
+    animation-name: box3;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+    overflow: hidden;
+    transition: 3s;
+}
+@keyframes box3{
+    0%{
+      transform: translateX(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.btn4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:7px 25px;
+    width: 40%;
+    background-color:transparent;
+    font-size: 11px;
+    color:white;
+    outline: none;
+    border:2px solid #f9004d;
+    cursor: pointer;
+    background-color: #f9004d;
+    border-radius: 30px;
+    transition: .4s;
+}
+.btn4 a{
+    text-decoration: none;
+    font-size: 11px;
+    color:white;
+    
+}
+.btn4{
+    transition:.5s;
+}
+.btn4:hover{
+    background-color: transparent;
+    border:2px solid #f9004d ;
+}
+.style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    background-color: #191919;
+}
+.text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 20px;
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+.text:hover{
+    color: #fcfc;
+}
+.btn5{
+   
+    padding:7px 25px;
+    width: 11%;
+    background-color:transparent;
+    font-size: 11px;
+    color:white;
+    outline: none;
+    border:2px solid #f9004d;
+    cursor: pointer;
+    background-color: #f9004d;
+    border-radius: 30px;
+    transition: .4s;
+}
+.btn5 a{
+    text-decoration: none;
+    font-size: 11px;
+    color:white;
+    
+}
+.btn5{
+    transition:.5s;
+}
+.btn5:hover{
+    background-color: transparent;
+    border:2px solid #f9004d ;
+
+}
+.skills{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #000;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.skills h1{
+    color: #fcfc;
+}
+.skilltop h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 24px;
+    background-color: #000;
+    font-size:28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.skills h1{
+    animation-name: skill;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    transition: all;
+}
+@keyframes skill{
+    0%{
+      transform: translateX(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@media(max-width:700px){
+    nav{
+        display:block;
+       
+    }
+   
+     nav ul li a {
+         font-size: 10px;
+     }
+    .header{
+        padding-top: 30px;
+        line-height:  10px;
+    }
+   nav ul li {
+    display: flex;
+
+   }
+    .container{
+        overflow: hidden;
+        width: 100%;
+    }
+    .services{
+        width: 100%;
+        height: 760px;
+    }
+    .flex{
+        flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    }
+}
+@media(max-width:400px){
+    nav{
+        display:block;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li {
+      line-height: 10px;
+      margin: 0px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+    }
+    .logo a{
+        text-decoration: none;
+    }
+    .logo h1{
+        font-size:22px;
+        padding-bottom: 15px;
+        padding-right:0%;
+    }
+    .bars{
+        padding-left:105px;
+    }
+    .header{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-right:0px;
+        padding-left: 4px;
+    }
+    .con{
+        position: absolute;
+        top: 35%;
+        left: 2%;
+    }
+    .cover{
+       display: flex;
+       width: 30px;
+    }
+
+    h1{
+        font-size:15px;
+        padding-left: -5px;
+    }
+    .container{
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+    }
+    .content{
+        line-height: 20px;
+    }
+    .cover{
+       padding-right: 90px;
+    }
+    .services{
+        width: 100%;
+        height: 760px;
+    }
+    .services p{
+     font-size: 10px;
+    }
+    .small h1{
+      font-size: 18px;
+    }
+    .small{
+        font-size: medium;
+    }
+    .flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .btn2{
+        padding: 3px 3px;
+        margin-top: 2%;
+    }
+    .btn3 a{
+        text-decoration: none;
+        font-size: 12px;
+        color:white;
+        
+    }
+    button{
+        padding:7px 25px;
+        width: 45%;
+        background-color:transparent;
+        font-size: 8px;
+        color:white;
+        outline: none;
+        border:2px solid #f9004d;
+        cursor: pointer;
+        background-color: #f9004d;
+        border-radius: 30px;
+        transition: .4s;
+    }
+    .newsletter{
+     width: 250px;
+    }
+    .content{
+        padding-left:2%;
+        width: 70%;
+        font-size: 10px;
+    }
+    .box1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        border-radius:10px ;
+        background-color: #191919;
+        padding-top: 30px;
+        width: 250px;
+        height: 180px;
+        box-shadow: 0px 0px 5px #000, 0px 0px 10px #858585;
+    }
+    .box2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        border-radius:10px ;
+        background-color: #191919;
+        padding-top: 30px;
+        width: 250px;
+        height: 180px;
+        box-shadow: 0px 0px 5px #000, 0px 0px 10px #858585;
+    }
+    .box3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        border-radius:10px ;
+        background-color: #191919;
+        box-shadow: 0px 0px 5px #000, 0px 0px 10px #858585;
+        padding-top: 30px;
+        width: 250px;
+        height: 180px;
+    }
+    .content{
+        font-size: 14px;
+        width: 100%;
+    }
+    .btn3{
+        font-size: 19px;
+    }
+    .btn4{
+        width: 60%;
+    }
+    .btn5{
+        width: 40%;
+    }
+    .checkbtn{
+        display:block;
+    }
+    .skills{
+        height: 40vh;
+        flex-direction: column;
+        color: #fcfc;
+    }
+    .skilltop{
+        font-size:40px;
+        font-weight: 900;
+      
+    }
+
+    }
